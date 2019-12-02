@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#101F30"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wes.app.ui.screens.DetailsFragment">
+
+    <ImageView
+        android:id="@+id/im_bitmap_detail"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/bitmap"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_details"
+        android:id="@+id/tv_food_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_bitmap_detail"
+        android:gravity="center"
+        android:text="@string/spinach_38_chicken_salad"
+        android:textColor="@color/text_detail"
+        android:textSize="@dimen/text_food_detail" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_details"
+        android:id="@+id/tv_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_food_detail"
+        android:gravity="center"
+        android:text="@string/author_john_smith"
+        android:textColor="@color/text_detail_two"
+        android:textSize="@dimen/text_autor_detail" />
+    <LinearLayout
+        android:padding="@dimen/padding_item_home"
+        android:background="#0B1723"
+        android:layout_marginTop="@dimen/margin_details"
+        android:id="@+id/line"
+        android:layout_below="@+id/tv_autor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/min"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 min"
+                android:textColor="@color/text_detail_two"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/people"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For 3 people"
+                android:textColor="@color/text_detail_two"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/easy"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:textColor="@color/text_detail_two"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:background="#0B1723"
+        android:id="@+id/tabMode"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/text_detail_two"
+        app:tabSelectedTextColor="@color/colorAccent">
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:padding="20dp"
+        android:layout_below="@+id/tabMode"
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

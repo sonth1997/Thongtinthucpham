@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context="com.wes.app.ui.screens.settingprofile.add.AddConfigurationFragment"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/configuration_meal"
+            android:textStyle="bold"
+            android:textColor="@color/text_detail"
+            android:textSize="@dimen/text_autor_detail"/>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="RtlHardcoded">
+            <TextView
+                android:id="@+id/tvDone"
+                android:gravity="center"
+                android:layout_width="66dp"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_tag_orange"
+                android:text="@string/done"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_people"
+                android:textColor="@color/text_detail_two"
+                android:textSize="@dimen/text_autor_detail" />
+        <EditText
+            android:id="@+id/edtNumber"
+            android:inputType="numberSigned"
+            android:textColor="@color/text_detail_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="3"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/meals"
+            android:textStyle="bold"
+            android:textColor="@color/text_detail"
+            android:textSize="@dimen/text_autor_detail"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/reSetting"
+            android:padding="15dp"
+            android:background="@drawable/bg_tag_white_configuration"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textColor="@color/text_color_profile"
+                android:layout_marginStart="30dp"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/rcvCheckAdd"
+            tools:listitem="@layout/item_configuration"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

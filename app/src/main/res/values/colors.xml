@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0B1723</color>
+    <color name="colorPrimaryDark">#0B1723</color>
+    <color name="colorAccent">#F8B601</color>
+    <color name="background_loading">#80ffffff</color>
+    <color name="text_detail">#FFFFFF</color>
+    <color name="text_detail_two">#57789D</color>
+    <color name="primary_background">#101F30</color>
+    <color name="divider">#101F30</color>
+    <color name="green">#44DB5E</color>
+    <color name="dish_trans">#66101F30</color>
+    <color name="text_dessert">#5444DB</color>
+    <color name="tangerine">#FF6B03</color>
+    <color name="bright_blu"> #1093ED</color>
+    <color name="yellow">#EEC60A</color>
+    <color name="text_color_profile">#333333</color>
+    <color name="text_profile_setting">#DB4444</color>
+
+
+</resources>

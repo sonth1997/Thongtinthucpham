@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <TextView
+        android:layout_marginLeft="@dimen/padding_item_home"
+        android:gravity="center"
+        android:textColor="@color/text_detail_two"
+        android:id="@+id/tvItemConfiguration"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_food_detail"
+        android:text="@string/main_course"
+        android:layout_marginStart="@dimen/padding_item_home" />
+
+        <CheckBox
+            android:id="@+id/checkboxConfiguration"
+            android:button="@drawable/bg_tag_custom_button"
+        android:layout_marginRight="@dimen/padding_item_home"
+        android:gravity="center"
+        android:layout_alignRight="@id/tvItemConfiguration"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/padding_item_home"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@id/tvItemConfiguration" />
+</RelativeLayout>

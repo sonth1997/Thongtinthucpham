@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/nav_today">
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.wes.app.ui.screens.HomesFragment"
+        android:label="fragment_homes"
+        tools:layout="@layout/fragment_homes">
+        <action
+            android:id="@+id/action_homes_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.wes.app.ui.screens.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.wes.app.ui.screens.favorites.FavoriteFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.wes.app.ui.screens.foods.views.FoodFragment"
+        android:label="FoodsFragment"
+        tools:layout="@layout/fragment_foods" >
+        <action
+            android:id="@+id/action_nav_food_to_fragmentDetailsFood"
+            app:destination="@id/navDetailFood" />
+        <action
+            android:id="@+id/action_nav_food_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.wes.app.ui.screens.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_fragmentSettingFroflie"
+            app:destination="@id/navSettingProfile" />
+        <action
+            android:id="@+id/action_nav_profile_to_nav_favorite"
+            app:destination="@id/nav_favorite" />
+    </fragment>
+    <fragment
+        android:id="@+id/navDetailFood"
+        android:name="com.wes.app.ui.screens.foods.foodsdetails.DetailsFoodsFragment"
+        android:label="fragment_details_food"
+        tools:layout="@layout/fragment_details_food" />
+    <fragment
+        android:id="@+id/navSettingProfile"
+        android:name="com.wes.app.ui.screens.settingprofile.done.SettingProflieFragment"
+        android:label="fragment_setting_frofiles"
+        tools:layout="@layout/fragment_setting_frofiles">
+        <action
+            android:id="@+id/action_fragmentSettingFroflie_to_blankFragment2"
+            app:destination="@id/navAddConfiguration" />
+    </fragment>
+    <fragment
+        android:id="@+id/navAddConfiguration"
+        android:name="com.wes.app.ui.screens.settingprofile.add.AddConfigurationFragment"
+        android:label="fragment_add_configuration"
+        tools:layout="@layout/fragment_add_configuration" >
+        <action
+            android:id="@+id/action_navAddConfiguration_to_navSettingProfile"
+            app:destination="@id/navSettingProfile" />
+    </fragment>
+
+</navigation>
