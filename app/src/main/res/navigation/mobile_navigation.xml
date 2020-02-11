@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_today"
-        android:name="com.wes.app.ui.screens.HomesFragment"
+        android:name="com.wes.app.ui.screens.home.HomeFragment"
         android:label="fragment_homes"
         tools:layout="@layout/fragment_homes">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.wes.app.ui.screens.DetailsFragment"
+        android:name="com.wes.app.ui.screens.details.view.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
     <fragment

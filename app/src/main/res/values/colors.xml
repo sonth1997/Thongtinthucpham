@@ -16,6 +16,6 @@
     <color name="yellow">#EEC60A</color>
     <color name="text_color_profile">#333333</color>
     <color name="text_profile_setting">#DB4444</color>
-
+    <color name="button_login_facebook">#2643EC</color>
 
 </resources>

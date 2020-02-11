@@ -22,7 +22,6 @@ class RetrofitCallback<T>(private val requestId: String,
             apiSuccess.invoke(requestId, it)
             return
         }
-
         apiError.invoke(requestId, com.wes.app.api.errors.ParserError(requestId))
     }
 }

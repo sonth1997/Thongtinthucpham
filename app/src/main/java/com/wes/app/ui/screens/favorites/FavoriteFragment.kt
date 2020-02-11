@@ -27,5 +27,4 @@ class FavoriteFragment: BaseAppFragment(),FavoriteAdapter.onClickItemFavorite {
     }
     override fun onClickItemFavorite(favorite: Favorite) {
     }
-
 }

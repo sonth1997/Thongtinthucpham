@@ -47,4 +47,8 @@
     <string name="khau_phan">Bữa ăn dành cho:</string>
     <string name="Meal">Bữa ăn dành cho: %s người</string>
     <string name="done">Done</string>
+    <string name="breakfasts">Breakfasts</string>
+    <string name="dinner">Dinner</string>
+    <string name="lunch">Lunch</string>
+    <string name="todo">TODO</string>
 </resources>

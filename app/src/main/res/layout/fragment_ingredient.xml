@@ -3,10 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.wes.app.ui.screens.ingredient.FragmentIngredient">
+    tools:context="com.wes.app.ui.screens.details.view.IngredientFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_ingredient"
+        android:id="@+id/rvIngredient"
+        tools:listitem="@layout/item_detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>

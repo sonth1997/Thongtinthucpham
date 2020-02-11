@@ -6,7 +6,7 @@
     app:startDestination="@id/splash">
     <fragment
         android:id="@+id/login"
-        android:name="com.wes.app.ui.screens.LoginFragment"
+        android:name="com.wes.app.ui.screens.login.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
 

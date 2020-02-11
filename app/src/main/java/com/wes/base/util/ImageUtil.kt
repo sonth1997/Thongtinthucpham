@@ -25,13 +25,12 @@ object ImageUtil {
                 .into(imageView)
     }
 
-    fun loadImage(context: Context,
-                  url: String,
+    fun loadImage(url: String,
                   placeHolder: Int = R.drawable.no_thumbnail,
                   imageView: ImageView,
                   height: Int = Target.SIZE_ORIGINAL,
                   width: Int = Target.SIZE_ORIGINAL) {
-        Glide.with(context).load(url).centerCrop()
+        Glide.with(imageView.context).load(url).centerCrop()
                 .placeholder(placeHolder).override(height, width).diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(imageView)
     }

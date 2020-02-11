@@ -11,22 +11,22 @@ import kotlinx.android.synthetic.main.item_list.*
 /**
  * @author HungHN on 3/15/2019.
  */
-class ItemAdapter : AppRecycleAdapter<String, ItemAdapter.ItemViewHolder>() {
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        return ItemViewHolder(parent.inflate(R.layout.item_list))
-    }
-
-    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val item = getItem(position) ?: ""
-        holder.bindData(item)
-        bindItemClickListener(holder.itemView, position, item)
-    }
-
-    class ItemViewHolder(override val containerView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(containerView), LayoutContainer {
-
-        fun bindData(item: String) {
-            textView.text = item
-        }
-    }
-}
+//class ItemAdapter : AppRecycleAdapter<String, ItemAdapter.ItemViewHolder, Any?>() {
+//
+//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
+//        return ItemViewHolder(parent.inflate(R.layout.item_list))
+//    }
+//
+//    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+//        val item = getItem(position) ?: ""
+//        holder.bindData(item)
+//        bindItemClickListener(holder.itemView, position, item)
+//    }
+//
+//    class ItemViewHolder(override val containerView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(containerView), LayoutContainer {
+//
+//        fun bindData(item: String) {
+//            textView.text = item
+//        }
+//    }
+//}

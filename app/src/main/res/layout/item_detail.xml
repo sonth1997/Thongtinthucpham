@@ -3,25 +3,26 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="55dp">
-        <TextView
-            android:layout_marginLeft="@dimen/padding_item_home"
-            android:gravity="center"
-            android:textColor="@color/text_detail_two"
-            android:id="@+id/tv_item_detail"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="@dimen/text_food_detail"
-            android:text="@string/spinach"
-            android:layout_marginStart="@dimen/padding_item_home" />
+
+    <TextView
+        android:id="@+id/tvItemDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/padding_item_home"
+        android:layout_marginLeft="@dimen/padding_item_home"
+        android:gravity="center"
+        android:text="@string/spinach"
+        android:textColor="@color/text_detail_two"
+        android:textSize="@dimen/text_food_detail" />
 
     <CheckBox
         android:layout_marginRight="@dimen/padding_item_home"
         android:gravity="center"
-        android:layout_alignRight="@id/tv_item_detail"
+        android:layout_alignRight="@id/tvItemDetail"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="@dimen/padding_item_home"
         android:layout_alignParentEnd="true"
-        android:layout_alignEnd="@id/tv_item_detail" />
+        android:layout_alignEnd="@id/tvItemDetail" />
 </RelativeLayout>
